@@ -11,7 +11,7 @@ private:
 public:
     StudentDatabase() {
         conn = mysql_init(NULL);
-        if (!mysql_real_connect(conn, "localhost", "root", "PrachiSinha@2004", "Student_Database", 3306, NULL, 0)) {
+        if (!mysql_real_connect(conn, "localhost", "root", "Admin", "Student_Database", 0000, NULL, 0)) {
             cerr << "Error connecting to MySQL database" << endl;
             exit(1);
         }
